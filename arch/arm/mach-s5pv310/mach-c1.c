@@ -7905,6 +7905,9 @@ static void c1_reboot(char str, const char *cmd)
 		else if (!strcmp(cmd, "recovery"))
 			writel(REBOOT_PREFIX | REBOOT_MODE_RECOVERY,
 			       S5P_INFORM3);
+		else if (!strcmp(cmd, "bootloader"))
+			writel(REBOOT_PREFIX | REBOOT_MODE_DOWNLOAD,
+			       S5P_INFORM3);
 		else if (!strcmp(cmd, "download"))
 			writel(REBOOT_PREFIX | REBOOT_MODE_DOWNLOAD,
 			       S5P_INFORM3);
@@ -8474,7 +8477,7 @@ static void __init s5pv310_reserve(void)
 }
 #endif
 
-MACHINE_START(C1, "SMDKC210")
+MACHINE_START(C1, "SMDKV310")
 	/* Maintainer: Kukjin Kim <kgene.kim@samsung.com> */
 	.phys_io	= S3C_PA_UART & 0xfff00000,
 	.io_pg_offst	= (((u32)S3C_VA_UART) >> 18) & 0xfffc,
@@ -8485,7 +8488,7 @@ MACHINE_START(C1, "SMDKC210")
 	.timer		= &s5pv310_timer,
 MACHINE_END
 
-MACHINE_START(SMDKC210, "SMDKC210")
+MACHINE_START(SMDKC210, "SMDKV310")
 	/* Maintainer: Kukjin Kim <kgene.kim@samsung.com> */
 	.phys_io	= S3C_PA_UART & 0xfff00000,
 	.io_pg_offst	= (((u32)S3C_VA_UART) >> 18) & 0xfffc,
