@@ -1,0 +1,1 @@
+cmd_fs/cifs/cifs.ko := /home/preston/android/system/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL -r  -T /home/preston/android/system/kernel/samsung/c1spr/scripts/module-common.lds --build-id -o fs/cifs/cifs.ko fs/cifs/cifs.o fs/cifs/cifs.mod.o
