@@ -1,1 +1,0 @@
-cmd_drivers/samsung/vibetonz/vibrator.ko := /home/preston/android/system/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL -r  -T /home/preston/android/system/kernel/samsung/c1spr/scripts/module-common.lds --build-id -o drivers/samsung/vibetonz/vibrator.ko drivers/samsung/vibetonz/vibrator.o drivers/samsung/vibetonz/vibrator.mod.o

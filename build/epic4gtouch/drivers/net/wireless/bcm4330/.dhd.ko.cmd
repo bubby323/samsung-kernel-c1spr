@@ -1,1 +1,0 @@
-cmd_drivers/net/wireless/bcm4330/dhd.ko := /home/preston/android/system/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL -r  -T /home/preston/android/system/kernel/samsung/c1spr/scripts/module-common.lds --build-id -o drivers/net/wireless/bcm4330/dhd.ko drivers/net/wireless/bcm4330/dhd.o drivers/net/wireless/bcm4330/dhd.mod.o
